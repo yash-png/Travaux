@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const recruiterSchema = new mongoose.Schema({
     name: {
@@ -8,15 +8,12 @@ const recruiterSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true
+
     },
     avatar: {
         type: binary,
     },
     password: {
-        type: String,
-        required: true
-    },
-    company: {
         type: String,
         required: true
     },
@@ -33,5 +30,8 @@ const recruiterSchema = new mongoose.Schema({
 });
 
 
+
+
+
 const Recruiter = mongoose.model('Recruiter', recruiterSchema);
-module.exports = Recruiter;
+export default Recruiter;

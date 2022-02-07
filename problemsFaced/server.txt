@@ -1,0 +1,3 @@
+Always make env files after importing packages. It won't read the .env file if it is made before.
+
+2)

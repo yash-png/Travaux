@@ -1,20 +1,27 @@
-const express = require('express');
+import dotenv from 'dotenv';
+dotenv.config();
+import express from 'express';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import mongoose from 'mongoose';
+import path from 'path';
+
+
+
 const app = express();
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-const path = require('path');
-const cors = require('cors');
-
-
-
 
 app.use(cors({
     origin: 'http://localhost:3000',
     credentials: true
 }))
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
 
+try {
+    mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+    console.log("connected to mongoDB");
+} catch (e) {
+    console.log(e);
+}
 
 app.get('/', (req, res) => {
     res.send('Hello World!');

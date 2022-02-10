@@ -3,8 +3,10 @@ import Home from "./components/home/Home";
 import Register from "./components/register/Register";
 import Login from "./components/login/Login";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Jobseeker from "./components/dashboard/jobs/Jobseeker";
+import Jobseeker from "./components/dashboard/jobs/Jobdashboard";
 import Recruiter from "./components/dashboard/hireJob/Recruiter";
+import Jobdetails from "./components/dashboard/jobs/Jobdetails";
+import Jobdashboard from "./components/dashboard/jobs/Jobdashboard";
 
 function App() {
   return (
@@ -14,8 +16,9 @@ function App() {
           <Route path="/" element={<Home />} />{" "}
           <Route path="/register" element={<Register />} />{" "}
           <Route path="/login" element={<Login />} />{" "}
-          <Route path="/dashboard/jobs" element={<Jobseeker />} />{" "}
-          <Route path="/dashboard/recruiter" element={<Recruiter />} />{" "}
+          <Route path="/jobs" element={<Jobdashboard />} />{" "}
+          <Route path="/recruit" element={<Recruiter />} />{" "}
+          <Route path="/dashboard/jobdetails" element={<Jobdetails />} />{" "}
         </Routes>{" "}
       </Router>{" "}
     </div>

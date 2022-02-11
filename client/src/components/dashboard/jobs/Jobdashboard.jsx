@@ -1,40 +1,40 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Rightcontainer from "./Rightcontainer";
-import Middlecontainer from "./Middlecontainer";
-import ProfileSection from "./ProfileSection";
+import Rightcontainer from "./jobsummary/Rightcontainer";
+import Middlecontainer from "./recommendedJobs/Middlecontainer";
+import ProfileSection from "./profile/ProfileSection";
 import Navbardash from "../Navbardash";
 const Jobdashboard = () => {
+ 
   return (
     <div
       style={{
         width: "100vw",
         height: "100vh",
-        overflow: "hidden",
+        overflowX:"hidden",
         backgroundColor: "#f6f6f6",
+
+       
       }}
     >
       <Navbardash />
 
       <Container fluid style={{ padding: "0 4rem 0 4rem" }}>
         <Row>
-          <Col xs={12} md={3} className="">
+          <Col xs={12} md={2} className="">
             <ProfileSection />
           </Col>
 
-          <Col xs={12} md={6} className="">
-            <Container className>
+          <Col xs={12} md={7} className="">
+           
               <Middlecontainer />
-            </Container>
+     
           </Col>
 
-          <Col xs={12} md={3} className="">
-            <Container
-              className
-              style={{ maxHeight: "80vh", overflowY: "scroll" }}
-            >
+          <Col xs={12} md={3} >
+         
               <Rightcontainer />
-            </Container>
+           
           </Col>
         </Row>
       </Container>

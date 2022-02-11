@@ -5,7 +5,6 @@ import Login from "./components/login/Login";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Jobseeker from "./components/dashboard/jobs/Jobdashboard";
 import Recruiter from "./components/dashboard/hireJob/Recruiter";
-import Jobdetails from "./components/dashboard/jobs/Jobdetails";
 import Jobdashboard from "./components/dashboard/jobs/Jobdashboard";
 
 function App() {
@@ -18,7 +17,7 @@ function App() {
           <Route path="/login" element={<Login />} />{" "}
           <Route path="/jobs" element={<Jobdashboard />} />{" "}
           <Route path="/recruit" element={<Recruiter />} />{" "}
-          <Route path="/dashboard/jobdetails" element={<Jobdetails />} />{" "}
+          {/* <Route path="/dashboard/jobdetails" element={<Jobdetails />} />{" "} */}
         </Routes>{" "}
       </Router>{" "}
     </div>
@@ -26,3 +25,6 @@ function App() {
 }
 
 export default App;
+
+
+

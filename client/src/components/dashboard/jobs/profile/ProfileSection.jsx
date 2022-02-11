@@ -8,13 +8,16 @@ const LeftContainer = () => {
       style={{}}
     >
       <Card
-        className="border border-dark"
         style={{
           width: "16rem",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           borderRadius: "1rem",
+          border: "1px solid #D9D3D2",
+          boxShadow: "-31px 29px 21px -26px rgba(0,0,0,0.47)", 
+  WebkitBoxShadow: "-31px 29px 21px -26px rgba(0,0,0,0.47)", 
+  MozBoxShadow: "-31px 29px 21px -26px rgba(0,0,0,0.47)"
         }}
       >
         <Container

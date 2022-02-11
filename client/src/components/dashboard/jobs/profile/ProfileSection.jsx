@@ -15,9 +15,9 @@ const LeftContainer = () => {
           alignItems: "center",
           borderRadius: "1rem",
           border: "1px solid #D9D3D2",
-          boxShadow: "-31px 29px 21px -26px rgba(0,0,0,0.47)", 
-  WebkitBoxShadow: "-31px 29px 21px -26px rgba(0,0,0,0.47)", 
-  MozBoxShadow: "-31px 29px 21px -26px rgba(0,0,0,0.47)"
+          boxShadow: "12px 10px 5px -6px rgba(0,0,0,0.4)",
+          WebkitBoxShadow: "12px 10px 5px -6px rgba(0,0,0,0.4)",
+          MozBoxShadow: "12px 10px 5px -6px rgba(0,0,0,0.4)",
         }}
       >
         <Container

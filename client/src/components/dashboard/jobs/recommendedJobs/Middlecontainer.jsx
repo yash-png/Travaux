@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import List from "@mui/material/List";
-// import { FormControl, Input, InputLabel, InputAdornment} from "@mui/material";
-import { Form, Button, Container } from "react-bootstrap";
-import JobSummaryCard from "../jobsummary/JobSummaryCard";
+import { Container } from "react-bootstrap";
+import RecommendedJobCard from "./RecommendedJobCard";
 import Searchbar from "./Searchbar";
-import Filters from "./Filters";
 
 const Middlecontainer = () => {
   const [searchResult, setSearchResult] = useState({
@@ -40,7 +38,6 @@ const Middlecontainer = () => {
     });
   };
 
-
   return (
     <div
       style={{
@@ -64,54 +61,54 @@ const Middlecontainer = () => {
       </Container>
 
       <hr />
-{/* 
-      <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
-        <JobSummaryCard
+
+      <List sx={{ width: "100%", bgcolor: "background.paper" }}>
+        <RecommendedJobCard
           avatar="1.jpg"
           title="React Developer"
           description="Looking for a React Developer"
         />
-        <JobSummaryCard
+        <RecommendedJobCard
           avatar="1.jpg"
           title="React Developer"
           description="Looking for a React Developer"
         />
-        <JobSummaryCard
+        <RecommendedJobCard
           avatar="1.jpg"
           title="React Developer"
           description="Looking for a React Developer"
         />
-        <JobSummaryCard
+        <RecommendedJobCard
           avatar="1.jpg"
           title="React Developer"
           description="Looking for a React Developer"
         />
-        <JobSummaryCard
+        <RecommendedJobCard
           avatar="1.jpg"
           title="React Developer"
           description="Looking for a React Developer"
         />
-        <JobSummaryCard
+        <RecommendedJobCard
           avatar="1.jpg"
           title="React Developer"
           description="Looking for a React Developer"
         />
-        <JobSummaryCard
+        <RecommendedJobCard
           avatar="1.jpg"
           title="React Developer"
           description="Looking for a React Developer"
         />
-        <JobSummaryCard
+        <RecommendedJobCard
           avatar="1.jpg"
           title="React Developer"
           description="Looking for a React Developer"
         />
-        <JobSummaryCard
+        <RecommendedJobCard
           avatar="1.jpg"
           title="React Developer"
           description="Looking for a React Developer"
         />
-      </List> */}
+      </List>
     </div>
   );
 };

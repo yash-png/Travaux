@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Recruiter = () => {
-  return <div></div>;
+  return (
+<>
+<p>Recruiter</p>
+</>
+  );
 };
 
 export default Recruiter;

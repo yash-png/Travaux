@@ -1,6 +1,9 @@
 import jwt from 'jsonwebtoken';
 import User from '../models/user.js';
 
+
+
+
 const generateAuthToken = async(user) => {
     const data = user;
     // console.log(data);

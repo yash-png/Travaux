@@ -1,14 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import ListItem from "@mui/material/ListItem";
-import Divider from "@mui/material/Divider";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
-import Typography from "@mui/material/Typography";
-import { Link } from "react-router-dom";
-import { Container } from "react-bootstrap";
 import Button from "@mui/material/Button";
-import SendIcon from "@mui/icons-material/Send";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
+import BookmarkBorderOutlinedIcon from "@mui/icons-material/BookmarkBorderOutlined";
+import CheckIcon from "@mui/icons-material/Check";
 /*
 {
     title: "React Developer",
@@ -20,6 +18,8 @@ import SendIcon from "@mui/icons-material/Send";
 */
 
 const JobSummaryCard = ({ title, description, avatar }) => {
+  const [click, setClick] = useState(false);
+
   return (
     <ListItem alignItems="flex-start" sx={{ height: "100%" }}>
       <ListItemAvatar sx={{ paddingTop: "0.4rem" }}>
@@ -33,7 +33,7 @@ const JobSummaryCard = ({ title, description, avatar }) => {
         }}
         primary="Company Name"
         secondary={
-          <React.Fragment>
+          <>
             <p
               className="d-block m-0"
               component="span"
@@ -53,10 +53,23 @@ const JobSummaryCard = ({ title, description, avatar }) => {
               {/* {description} */}
               sbvhfbrhfbrhfbrfrjnjrgnjrngkgrkmkmkmkmkk
             </p>
-           
-          </React.Fragment>
+          </>
         }
       />
+      <div className="container-fluid my-3 d-flex justify-content-end ">
+        <Button variant="contained" color="success" endIcon={<CheckIcon />}>
+          Apply
+        </Button>
+        <Button
+          className="mx-4"
+          variant="contained"
+          color="primary"
+          onClick={() => setClick(!click)}
+          endIcon={click ? <BookmarkIcon /> : <BookmarkBorderOutlinedIcon />}
+        >
+          Save
+        </Button>
+      </div>
     </ListItem>
     // </Container>
   );

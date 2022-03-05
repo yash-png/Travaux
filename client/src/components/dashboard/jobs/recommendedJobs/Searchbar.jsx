@@ -46,7 +46,7 @@ const Searchbar = () => {
           <IconButton aria-label="search">
             <FilterListIcon />
           </IconButton>
-          <div style={{ fontSize: "1.2rem" }}>Filters</div>
+          <div style={{ fontSize: "1rem" ,fontFamily:"Helvetica",opacity:"0.8"}}>Filters</div>
         </div>
         <span
           style={{
@@ -57,7 +57,7 @@ const Searchbar = () => {
         ></span>
         <Button
           className="btn btn-md btn-primary px-3 ml-4"
-          style={{ borderRadius: "1.5rem" }}
+          style={{ borderRadius: "1.5rem",fontSize:"0.8rem" }}
         >
           SEARCH
         </Button>

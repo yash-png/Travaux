@@ -17,7 +17,7 @@ function App() {
           <Route path="/login" element={<Login />} />{" "}
           <Route path="/jobs" element={<Jobdashboard />} />{" "}
           <Route path="/recruit" element={<Recruiter />} />{" "}
-          {/* <Route path="/dashboard/jobdetails" element={<Jobdetails />} />{" "} */}
+          {/* <Route path="/dashboard/jobdetails" element={<Jobdetails />} />{" "} */}{" "}
         </Routes>{" "}
       </Router>{" "}
     </div>
@@ -25,6 +25,3 @@ function App() {
 }
 
 export default App;
-
-
-

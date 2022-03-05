@@ -1,21 +1,31 @@
 import React from "react";
-import { Navbar,Nav ,Container} from "react-bootstrap";
-
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 const Navbardash = () => {
   return (
     <div>
       <Navbar bg="light" variant="light">
         <Container>
-          <Navbar.Brand href="#home">Travaux</Navbar.Brand>
-          <Nav className="ml-5">
-            {/* <Navbar.Brand href="#home"></Navbar.Brand> */}
-            <Navbar.Brand href="#home">Jobs</Navbar.Brand>
-            <Navbar.Brand href="#home">Hire</Navbar.Brand>
+          <Navbar.Brand style={{fontSize:"1.5rem"}}  href="/">
+            Travaux
+          </Navbar.Brand>
+          <Nav className="d-flex">
+            <Nav.Link href="/jobdetail">
+              <Button className="px-4" variant="dark">
+                Jobs
+              </Button>
+            </Nav.Link>
+            <Nav.Link href="/hire">
+              <Button className="px-4" variant="dark">
+                Hire
+              </Button>
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
     </div>
   );
 };
+
+// 
 
 export default Navbardash;

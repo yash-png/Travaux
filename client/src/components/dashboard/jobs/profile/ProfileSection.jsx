@@ -50,6 +50,11 @@ const LeftContainer = () => {
           </Card.Text>
           <hr />
           <ListGroup className="list-group-flush pt-0">
+           <ListGroupItem>
+              <Card.Link className="text-decoration-none" href="#">
+                Profile
+              </Card.Link>
+            </ListGroupItem>
             <ListGroupItem>
               <Card.Link className="text-decoration-none" href="#">
                 Resume
@@ -57,7 +62,7 @@ const LeftContainer = () => {
             </ListGroupItem>
             <ListGroupItem>
               <Card.Link className="text-decoration-none" href="#">
-                Settings
+                Setting
               </Card.Link>
             </ListGroupItem>
             <ListGroupItem>

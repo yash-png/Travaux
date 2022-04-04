@@ -34,8 +34,3 @@ const auth = async (req, res, next) => {
   }
 };
 export { generateAuthToken, auth };
-
-app.get("/", auth, (req, res) => {
-  //   const user = req.user;
-  res.send("Hello");
-});

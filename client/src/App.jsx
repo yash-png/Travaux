@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Jobseeker from "./components/dashboard/jobs/Jobdashboard";
 import Recruiter from "./components/dashboard/hireJob/Recruiter";
 import Jobdashboard from "./components/dashboard/jobs/Jobdashboard";
+import Jobsdetails from "./components/dashboard/jobs/jobsdetails/Jobsdetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/login" element={<Login />} />{" "}
           <Route path="/jobs" element={<Jobdashboard />} />{" "}
           <Route path="/recruit" element={<Recruiter />} />{" "}
+          <Route path="/jobdetail" element={<Jobsdetails />} />{" "}
           {/* <Route path="/dashboard/jobdetails" element={<Jobdetails />} />{" "} */}{" "}
         </Routes>{" "}
       </Router>{" "}

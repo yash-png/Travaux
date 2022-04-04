@@ -3,18 +3,15 @@ import { Container, Row, Col } from "react-bootstrap";
 import Rightcontainer from "./jobsummary/Rightcontainer";
 import Middlecontainer from "./recommendedJobs/Middlecontainer";
 import ProfileSection from "./profile/ProfileSection";
-import Navbardash from "../Navbardash";
+import Navbardash from "./Navbardash";
 const Jobdashboard = () => {
- 
   return (
     <div
       style={{
         width: "100vw",
         height: "100vh",
-        overflowX:"hidden",
+        overflowX: "hidden",
         backgroundColor: "#f6f6f6",
-
-       
       }}
     >
       <Navbardash />
@@ -26,15 +23,11 @@ const Jobdashboard = () => {
           </Col>
 
           <Col xs={12} md={7} className="">
-           
-              <Middlecontainer />
-     
+            <Middlecontainer />
           </Col>
 
-          <Col xs={12} md={3} >
-         
-              <Rightcontainer />
-           
+          <Col xs={12} md={3}>
+            <Rightcontainer />
           </Col>
         </Row>
       </Container>
